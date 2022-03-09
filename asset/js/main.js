@@ -12,9 +12,18 @@ if (età < 18) {
     var risultato = (`${km*0.21}`);
 }
 //calcolo dello sconto
+
 let sconto = km*0.21 - risultato;
 console.log(sconto);
 console.log(risultato);
 sconto = Math.round(sconto * 10) / 10;
 console.log(risultato);
-document.getElementById("element").innerHTML = `il prezzo da pagare è: €${sconto}`;
+if (età < 18){
+    document.getElementById("element").innerHTML = `il prezzo da pagare è: €${sconto}`;
+}
+else if (età > 65){
+    document.getElementById("element").innerHTML = `il prezzo da pagare è: €${sconto}`;
+}
+else{
+    document.getElementById("element").innerHTML = `il prezzo da pagare è: €${risultato}`;
+}
