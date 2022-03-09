@@ -1,0 +1,28 @@
+body{
+    background-image: url(./../img/trainWallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.trenitalia{
+    color: white;
+    background-color: rgba(248, 36, 36, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+}
+h1,
+h2{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+#element{
+    text-align: center;
+    background-color: rgba(251, 255, 0, 0.4);
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+}
